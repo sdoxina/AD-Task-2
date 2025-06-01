@@ -46,6 +46,10 @@ $images = getShowcaseImages();
       </div>
       </section>
 
+      <section class="divider-section">
+         <div alt="divider" class="divider"></div>
+      </section>
+
       <!-- Footer -->
        <?php require_once BASE_PATH . '/components/templates/footer.component.php'; ?>
 
