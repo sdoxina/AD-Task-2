@@ -1,4 +1,11 @@
 <?php
+define('BASE_PATH', __DIR__); // define BASE_PATH if not already defined
+require_once BASE_PATH . '/vendor/autoload.php';
+require_once BASE_PATH . '/utils/htmlEscape.utils.php';
+?>
+
+
+<?php
 require_once './components/templates/nav.component.php';
 require_once './components/templates/footer.component.php';
 require_once './utils/greeting.utils.php';
@@ -24,19 +31,7 @@ $images = getShowcaseImages();
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="" alt="Logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-        </div>
-    </nav>
+    <?php require_once BASE_PATH . '/components/templates/nav.component.php'; ?>
 
 
     <!-- Hero Section -->
