@@ -31,6 +31,7 @@ $images = getShowcaseImages();
 </head>
 <body>
     <!-- Nav -->
+     <?php require_once BASE_PATH . '/components/templates/nav.component.php'; ?>
 
     <section class="hero-section">
          <div class="container-fluid">
