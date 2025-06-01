@@ -1,3 +1,16 @@
+<?php
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', dirname(dirname(__DIR__))); // points to project root
+}
+require_once BASE_PATH . '/vendor/autoload.php';
+require_once BASE_PATH . '/utils/greeting.utils.php';
+require_once BASE_PATH . '/handlers/items.handler.php';
+
+$greeting = getGreeting();
+$items = getAllItems();
+$categories = ['clothing', 'plushie', 'bags'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +24,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="" alt="Logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-        </div>
-    </nav>
+    <?php require_once BASE_PATH . '/components/templates/nav.component.php'; ?>
 
 
     <!-- Hero Section -->
