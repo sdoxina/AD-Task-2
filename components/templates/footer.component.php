@@ -23,7 +23,7 @@ require_once BASE_PATH . '/handlers/pageData.handler.php';
         </div>
         <div class="col-md-7 offset-md-1 mb-3">
           <img src="<?= $companyLogo ?>" alt="Buttoncone Logo">
-        </div>~
+        </div>
       </div>
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <p>Copyright <?= $companyCopyright ?></p>
