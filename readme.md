@@ -10,7 +10,7 @@
   <h3 align="center">buttoncone</h3>
 </div>
 <div align="center">
-  Short Description. (Optional)
+  A simple crochet showcase website built with PHP, showcasing the use of PHP declarations, loops, conditionals, arrays, functions, and fragmentation.
 </div>
 
 <br />
@@ -24,7 +24,6 @@
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -52,18 +51,41 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
+**Buttoncone** is a simple crochet item catalog site that demonstrates important PHP fundamentals including:
+- Variable declarations and array handling
+- Loops for rendering item listings
+- Conditionals for filtering and greetings
+- Modular code with reusable functions and fragments
 
-Description of the project in details.
+The project displays a categorized collection of handmade crochet items (Clothing, Plushies, Bags), dynamically rendered using PHP arrays and functions.
+
+### How PHP is Used
+
+#### ✅ Declarations & Arrays
+- Items are stored in a PHP **array of associative arrays (dictionaries)**. Each dictionary represents an item with properties like `name`, `category`, and `image`.
+
+#### 🔁 Loops
+- `foreach` loops are used to iterate over all items and render them as Bootstrap cards.
+- Loops also dynamically generate category buttons and item sections based on category.
+
+#### ⚡️ Conditionals
+- Items are filtered by category using `if` conditions inside the loop.
+- Time-based greetings (“Good Morning,” “Good Afternoon,” etc.) use conditional logic based on the current hour.
+
+#### 🧩 Functions & Fragmentation
+- Reusable **functions** like `getGreeting()` and `getAllItems()` are defined in `utils/` and `handlers/` folders to keep logic clean and reusable.
+- The page layout is **fragmented** using PHP `require_once`:
+  - `components/templates/nav.component.php` for the navbar
+  - `components/templates/footer.component.php` for the footer
+  - Utility logic and handlers are in separate PHP files
+- This approach improves **modularity**, maintainability, and readability.
 
 ### Key Components
 
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+- Homepage with a dynamic greeting based on time of day
+- Items page showing categorized crochet items (Clothing, Plushies, Bags)
+- Responsive layout built with Bootstrap
+- PHP-driven item rendering using clean, modular code
 
 ### Technology
 
