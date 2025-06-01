@@ -1,7 +1,9 @@
 <?php
 if (!defined('BASE_PATH')) {
-    define('BASE_PATH', dirname(dirname(__DIR__))); // points to project root
+    define('BASE_PATH', __DIR__);
 }
+require_once BASE_PATH . '/vendor/autoload.php';
+require_once BASE_PATH . '/utils/htmlEscape.utils.php';
 require_once BASE_PATH . '/vendor/autoload.php';
 require_once BASE_PATH . '/utils/greeting.utils.php';
 require_once BASE_PATH . '/handlers/items.handler.php';
