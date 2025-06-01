@@ -1,3 +1,16 @@
+<?php
+require_once './components/templates/nav.component.php';
+require_once './components/templates/footer.component.php';
+require_once './utils/greeting.utils.php';
+require_once './handlers/quotes.handler.php';
+require_once './handlers/imageList.handler.php';
+
+$greeting = getGreeting();
+$quote = getRandomQuote();
+$images = getShowcaseImages();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
