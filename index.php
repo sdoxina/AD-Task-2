@@ -1,5 +1,7 @@
 <?php
-define('BASE_PATH', __DIR__); // define BASE_PATH if not already defined
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', __DIR__);
+}
 require_once BASE_PATH . '/vendor/autoload.php';
 require_once BASE_PATH . '/utils/htmlEscape.utils.php';
 ?>
