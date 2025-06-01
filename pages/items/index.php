@@ -48,6 +48,10 @@ $categories = ['clothing', 'plushie', 'bags'];
          </div>
       </section>
 
+      <section class="divider-section-2">
+         <div alt="divider" class="divider2"></div>
+      </section>
+
 
     <!-- Footer -->
     <?php require_once BASE_PATH . '/components/templates/footer.component.php'; ?>
