@@ -52,6 +52,31 @@ $categories = ['clothing', 'plushie', 'bags'];
          <div alt="divider" class="divider2"></div>
       </section>
 
+    <section class="items-section py-5">
+    <div class="container text-center">
+      <h2 class="mb-4 display-6 encircled-title">Our Crochet Items</h2>
+      <?php foreach ($categories as $cat): ?>
+        <div id="<?= $cat ?>" class="mb-5">
+          <h3 class="mb-4 text-capitalize"><?= $cat ?></h3>
+          <div class="row justify-content-center">
+            <?php foreach ($items as $item): ?>
+              <?php if ($item['category'] === $cat): ?>
+                <div class="col-md-6 col-lg-4 mb-4 d-flex">
+                  <div class="card w-100 crochet-card shadow-sm">
+                    <img src="<?= $item['img'] ?>" class="card-img-top" alt="<?= $item['name'] ?>">
+                    <div class="card-body text-start">
+                      <h5 class="card-title"><?= $item['name'] ?></h5>
+                    </div>
+                  </div>
+                </div>
+              <?php endif; ?>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+
 
     <!-- Footer -->
     <?php require_once BASE_PATH . '/components/templates/footer.component.php'; ?>
