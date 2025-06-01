@@ -50,6 +50,12 @@ $images = getShowcaseImages();
          <div alt="divider" class="divider"></div>
       </section>
 
+      <section class="quote-section">
+        <div class="quote-container">
+            <?= $quote ?>
+        </div>
+      </section>
+
       <!-- Footer -->
        <?php require_once BASE_PATH . '/components/templates/footer.component.php'; ?>
 
