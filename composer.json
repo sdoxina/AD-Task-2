@@ -1,0 +1,19 @@
+{
+    "name": "oxina/ad-task-2",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Oxina\\AdTask2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sdoxina",
+            "email": "202311026@fit.edu.ph"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8000 router.php"
+    },
+    "require": {}
+}
