@@ -56,6 +56,38 @@ $images = getShowcaseImages();
         </div>
       </section>
 
+      <section class="about-section">
+         <div class="container-fluid about-container">
+            <div class="row">
+            <div class="col-sm introduction">
+               <div class="text-container">
+                  <h2 class="intro-heading">Who We Are</h2>
+                  <p class="intro-desc">Our shop is where yarn comes to life — filled with soft, whimsical crochet creations made to spark joy and add a little magic to your everyday.</p>
+                  <h3 class="intro-heading">📞 Contact Us</h3>
+                  <p>Got questions or custom orders in mind? We'd love to hear from you!</p>
+                  <ul class="list-unstyled">
+                     <li><strong>📍 Location:</strong> Near FEU Tech, P. Paredes Street, Sampaloc, Manila</li>
+                     <li><strong>📧 Email:</strong> <a href="mailto:hello@buttoncone.com">hello@buttoncone.com</a></li>
+                     <li><strong>📱 Phone:</strong> <a href="tel:+639171234567">+63 917 123 4567</a></li>
+                     <li><strong>📷 Instagram:</strong> <a href="https://instagram.com/buttoncone" target="_blank">@cozycrochetshop</a></li>
+                     <li><strong>🕒 Hours:</strong> Monday to Saturday, 9:00 AM – 6:00 PM</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-sm showcase">
+               <div class="coquette-frame">
+                  <div class="wrapper">
+                     <?php foreach ($images as $img): ?>
+                     <div class="card" style="background-image: url('<?php echo $img; ?>'); background-size: cover; background-position: center;">
+                     </div>
+                     <?php endforeach; ?>
+                  </div>
+               </div>
+               </div>
+               </div>
+         </div>
+      </section>
+
       <!-- Footer -->
        <?php require_once BASE_PATH . '/components/templates/footer.component.php'; ?>
 
