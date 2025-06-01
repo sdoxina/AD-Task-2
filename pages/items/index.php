@@ -30,10 +30,23 @@ $categories = ['clothing', 'plushie', 'bags'];
 
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-        </div>
-    </section>
+    <section class="hero-section">
+         <div class="scallop-box">
+            <div class="scallop-container">
+               <div class="greeting-block">
+                  <h2 class="text-center greeting"><?= $greeting ?></h2>
+               </div>
+            <h3 class="hero-txt">Check out our collection</h3>
+
+            <!-- Filter Buttons -->
+            <div class="btn-group mb-5" role="group">
+            <a href="#clothing" class="btn item-btn clothing-btn">Clothing</a>
+            <a href="#plushie" class="btn item-btn plushie-btn">Plushie</a>
+            <a href="#bags" class="btn item-btn bags-btn">Bags</a>
+            </div>
+            </div>
+         </div>
+      </section>
 
 
     <!-- Footer -->
