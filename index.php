@@ -30,8 +30,6 @@ $images = getShowcaseImages();
     <link rel="icon" type="image/x-icon" href="./assets/img/buttonconeFav.png">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <?php require_once BASE_PATH . '/components/templates/nav.component.php'; ?>
 
 
     <!-- Hero Section -->
@@ -39,10 +37,6 @@ $images = getShowcaseImages();
         <div class="container">
         </div>
     </section>
-
-
-    <!-- Footer -->
-    <?php require_once BASE_PATH . '/components/templates/footer.component.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="./assets/js/script.js"></script>
