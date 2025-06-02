@@ -98,9 +98,6 @@ The project displays a categorized collection of handmade crochet items (Clothin
 #### Framework/Library
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-#### Deployment
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
 ## Rules, Practices and Principles
 
 <!-- Do not Change this -->
